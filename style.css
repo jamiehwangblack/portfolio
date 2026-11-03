@@ -1,0 +1,25 @@
+body{
+    background-color:black;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    padding: 80px;
+}
+
+h1{
+    color:white;
+    font-size: 40px;
+}
+
+p{
+    color:aliceblue;
+    font-size: 20px;
+}
+
+button{
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
