@@ -1,5 +1,5 @@
-const button = document.getElementById("buttonD");
+const button = document.getElementById("buttonS");
 
 button.addEventListener("click", function() {
-    alert("Digital Art Collection");
+    window.location.href = "https://jamiehwangblack.com";
 });
