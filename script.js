@@ -1,6 +1,6 @@
 const buttonST = document.getElementById("buttonST");
 
-button.addEventListener("click", function() {
+buttonST.addEventListener("click", function() {
     window.open("https://www.jamiehwangblack.com", "_blank");
 });
 
