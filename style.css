@@ -21,11 +21,17 @@ p{
 }
 
 button{
+    display: inline-flex;
     background-color: black;
     color: white;
     cursor: pointer;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-bottom: 20px;
     font-size: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
