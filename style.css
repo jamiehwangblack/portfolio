@@ -2,24 +2,30 @@ body{
     background-color:black;
     font-family:Arial, sans-serif;
     text-align:center;
-    padding: 80px;
+    padding: none;
+    margin: 50px;
 }
 
 h1{
     color:white;
     font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 1px;
 }
 
 p{
     color:aliceblue;
     font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 20px;
 }
 
 button{
-    background-color: white;
-    color: black;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 6px;
+    background-color: black;
+    color: white;
     cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
