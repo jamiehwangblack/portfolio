@@ -36,20 +36,6 @@ button {
     gap: 20px;
 }
 
-/* JOURNAL */
-
-#journalLogs {
-    display: none;
-    margin: 30px;
-}
-
-#journalLogs a {
-    color: white;
-    font-size: 20px;
-}
-
-/* ARTWORKS */
-
 #artworks {
     display: flex;
     justify-content: center;

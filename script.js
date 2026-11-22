@@ -18,6 +18,5 @@ buttonAB.addEventListener("click", function() {
 const buttonJO = document.getElementById("buttonJO");
 
 buttonJO.addEventListener("click", function() {
-    document.getElementById("artworks").style.display = "none";
-    document.getElementById("journalLogs").style.display = "block";
+    window.location.href = "journal/index.html";
 });
