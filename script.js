@@ -12,11 +12,7 @@ buttonST.addEventListener("click", function() {
 const buttonAB = document.getElementById("buttonAB");
 
 buttonAB.addEventListener("click", function() {
-    window.open(
-        "https://jamiehwangblack.bigcartel.com/about-me",
-        "_blank",
-        "noopener,noreferrer"
-    );
+    window.location.href = "about.html";
 });
 
 const buttonJO = document.getElementById("buttonJO");
