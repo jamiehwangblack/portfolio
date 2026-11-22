@@ -1,36 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JAMIE HWANG-BLACK PORTFOLIO</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <img src="https://yangdongiaws.s3.us-east-2.amazonaws.com/album1/Jamie+Icon.jpeg" alt="Icon" width="200" height="200">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>JAMIE HWANG-BLACK PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <h1>JAMIE HWANG-BLACK</h1>
-        <p> jamiehwangblack@gmail.com </p>
+<body>
+    <img
+        src="https://yangdongiaws.s3.us-east-2.amazonaws.com/album1/Jamie+Icon.jpeg"
+        alt="Icon"
+        width="200"
+        height="200"
+    >
 
-        <div class="row">
+    <h1>JAMIE HWANG-BLACK</h1>
+    <p>jamiehwangblack@gmail.com</p>
+
+    <div class="row">
         <button id="buttonST">STORE</button>
         <button id="buttonAB">ABOUT</button>
-        <button id="buttonJO" onclick="showLogs()">JOURNAL</button>
-        </div>
+        <button id="buttonJO">JOURNAL</button>
+    </div>
 
-        <br>
-        <br>
+    <div id="journalLogs">
+        <a href="journal/index.html">Journal Entries</a>
+    </div>
 
-        <script src="script.js"></script>
+    <div id="artworks">
 
-        <div id="journalLogs">
-            <a href="11.21.26.html">11.21.26</a>
-        </div>
+        <a href="art/printmaking.html" class="artwork">
+            <img
+                src="https://yangdongiaws.s3.us-east-2.amazonaws.com/album1/Our+Little+Happiness+(2026)+Cropped.png"
+                alt="Our Little Happiness"
+            >
+            <span class="artwork-label">PRINTMAKING</span>
+        </a>
 
-        <div id="artworks">
-        <img src="https://yangdongiaws.s3.us-east-2.amazonaws.com/album1/Our+Little+Happiness+(2026)+Cropped.png" alt="Our Little Happiness" width="582" height="800">
-        <img src="https://yangdongiaws.s3.us-east-2.amazonaws.com/album1/Chicago+Lives+(2026).png" alt="Chicago Lives" width="582" height="800">
-        </div>
+        <a href="art/digital-art.html" class="artwork">
+            <img
+                src="https://yangdongiaws.s3.us-east-2.amazonaws.com/album1/Chicago+Lives+(2026).png"
+                alt="Chicago Lives"
+            >
+            <span class="artwork-label">DIGITAL ART</span>
+        </a>
 
-    </body>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
