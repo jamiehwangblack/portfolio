@@ -37,19 +37,24 @@ button {
 }
 
 #artworks {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: block;
+    max-width: 1400px;
+    margin: 60px auto;
+}
+
+/* change number of columns in grid here */
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
-    margin-top: 40px;
+    align-items: start;
 }
 
 .artwork {
     position: relative;
     display: block;
-    width: 582px;
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
     text-decoration: none;
 }
@@ -57,7 +62,8 @@ button {
 .artwork img {
     display: block;
     width: 100%;
-    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
 }
 
 .artwork-label {
@@ -68,9 +74,11 @@ button {
     justify-content: center;
     align-items: center;
 
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.65);
     color: white;
-    font-size: 30px;
+    font-size: 22px;
+    text-align: center;
 
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -81,24 +89,32 @@ button {
     opacity: 1;
 }
 
+@media (max-width: 900px) {
+    .art-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 600px) {
-    body {
-        margin: 20px;
+    .art-grid {
+        grid-template-columns: 1fr;
     }
 
-    h1 {
-        font-size: 30px;
-    }
-
-    .artwork-label {
+    .art-category h2 {
         font-size: 24px;
+    }
+
+    .art-category {
+        margin-bottom: 50px;
     }
 }
 
 @media (hover: none) {
     .artwork-label {
+        position: static;
         opacity: 1;
-        background-color: rgba(0, 0, 0, 0.35);
+        background-color: transparent;
+        font-size: 16px;
     }
 }
 
@@ -223,3 +239,29 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.artwork-detail {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.artwork-detail img {
+    display: block;
+    max-width: 100%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+.artwork-description {
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+.artwork-description p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
